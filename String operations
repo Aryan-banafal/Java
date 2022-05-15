@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class STRING {
+
+
+    public static void main (String []args) {
+
+
+        String msg = new String("helloworld");        //constructor
+        System.out.println(msg);
+
+
+        Scanner input = new Scanner(System.in);          //scanner  object
+
+
+        System.out.println("\nEnter any string ");
+        String name = input.nextLine();
+
+
+        System.out.println("\nEnter any string ");
+        String name2 = input.nextLine();
+
+        System.out.println("Enter index number to find occurrences of character");
+        int name3 = input.nextInt();
+
+        System.out.println(" Enter character for index ");
+        String name4 = input.nextLine();
+
+
+        System.out.println("Enter character to replace");
+        String name5 = input.nextLine();
+
+        System.out.println(" Enter character to replace with ");
+        String name6 = input.nextLine();
+
+
+        System.out.println("String is" + name);
+
+        System.out.println("STring length is" + name.length());
+        System.out.println("concating=" + name.concat(name2));
+        System.out.println("char at given position" + name.charAt(name3));
+        System.out.println("equals()" + name.equals(name2));
+        System.out.println("CompareTo" + name.compareTo(name2));
+        System.out.println("first index of" + name.indexOf(name4));
+        System.out.println("last index of" + name.lastIndexOf(name4));
+
+        System.out.println("part of String 1 is" + name.substring(2, 4));
+        System.out.println("replacing character in String  is " + name.replace(name5, name6));
+        System.out.println("uppercase=" + name.toUpperCase());
+        System.out.println("lowercase=" + name.toLowerCase());
+
+        input.close();
+    }
+
+}
